@@ -3,9 +3,7 @@ import React, { useState } from 'react';
 import EmailIcon from '@mui/icons-material/Email';
 import LockIcon from '@mui/icons-material/Lock';
 
-const SignIn = ({ch}) => {
-
-    const [pg, setPg] = useState(ch);
+const SignIn = (props) => {
 
     return (
         <>
@@ -51,7 +49,7 @@ const SignIn = ({ch}) => {
                                 Enter the details and start your journey with us
                         </p>
                         <div className='my-5 text-center' >
-                                <button className='btn btn-light rounded-pill px-5' onClick={() => {setPg(!ch)}} >SIGN UP</button>
+                                <button className='btn btn-outline-light rounded-pill px-5' onClick={() => props.onClick(()=> false)} >SIGN UP</button>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ const Home = () => {
     return (
         <>
             {
-                home ? <SignIn ch={home}/> : <SignUp ch={home} />
+                home ? <SignIn onClick={(v)=> setHome(v)} /> : <SignUp onClick={(v)=> setHome(v)} />
             }
         </>
     );
