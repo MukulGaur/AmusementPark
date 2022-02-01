@@ -41,7 +41,7 @@ const SignUp = (props) => {
         }),
         onSubmit: (values) => {
             console.log(values);
-            insertCustomerDetails(formik.values);
+            insertCustomerDetails(values);
             navigate('/customerhome')
         }
     });
